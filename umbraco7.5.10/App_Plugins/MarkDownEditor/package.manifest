@@ -1,0 +1,19 @@
+﻿{
+    //you can define multiple editors
+    propertyEditors: [
+        {
+            alias: "My.MarkdownEditor",
+	        name: "My markdown editor",
+            icon: "icon-code",
+            group: "Rich Content",
+            editor: {
+                view: "~/App_Plugins/MarkDownEditor/markdowneditor.html"
+            }
+        }
+    ]
+    ,
+    //array of files we want to inject into the application on app_start
+    javascript: [
+        '~/App_Plugins/MarkDownEditor/markdowneditor.controller.js'
+    ]
+}
