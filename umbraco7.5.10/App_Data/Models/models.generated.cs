@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "6c0579a4f8655148")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "cc1dda6ddd917ad3")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.10")]
 
 namespace Umbraco.Web.PublishedContentModels
@@ -439,6 +439,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Page, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Lists
+		///</summary>
+		[ImplementPropertyType("lists")]
+		public Archetype.Models.ArchetypeModel Lists
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("lists"); }
 		}
 
 		///<summary>
