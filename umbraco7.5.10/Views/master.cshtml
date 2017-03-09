@@ -18,17 +18,33 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+			@{Html.RenderPartial("Site/backgroundImage");}
 	</head>
 	<body>
 		<header>
+			@{Html.RenderPartial("main");}
 		</header>
 		@RenderBody()
 		<footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="/">&copy; Company Name @DateTime.Now.ToString("yyyy")</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="fb-like" data-href="https://www.facebook.com/GitHub" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="Github" data-show-count="false">Tweet</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="col-md-4">
+                    <a href="/" target="_blank">Company Link</a>
+                </div>
+            </div>
 		</footer>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="~/scripts/bootstrap.min.js"></script>
 		<script src="~/scripts/script.js"></script>
+        <script src="~/scripts/like-facebook.js"></script>		
 	</body>
 </html>

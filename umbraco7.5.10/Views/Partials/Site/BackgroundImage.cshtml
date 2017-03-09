@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	if(Model.Content.HasValue("image")){
+		<style>
+			body{
+				background: url(@Umbraco.TypedMedia(Model.Content.GetPropertyValue("image")).Url);
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+				background-position:center center;
+				background-size:cover;
+				background-color: #464646;
+			}
+		</style>	
+	}
+}
