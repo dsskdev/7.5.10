@@ -22,21 +22,27 @@
 	</head>
 	<body>
 		<header>
-			@{Html.RenderPartial("main");}
+            <div class="container">
+			    @{Html.RenderPartial("main");}
+            </div>
 		</header>
-		@RenderBody()
+            <div class="container">
+		        @RenderBody()
+            </div>
 		<footer>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="/">&copy; Company Name @DateTime.Now.ToString("yyyy")</a>
-                </div>
-                <div class="col-md-4">
-                    <div class="fb-like" data-href="https://www.facebook.com/GitHub" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="Github" data-show-count="false">Tweet</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <div class="col-md-4">
-                    <a href="/" target="_blank">Company Link</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 center-content">
+                        <a href="/">&copy; Company Name @DateTime.Now.ToString("yyyy")</a>
+                    </div>
+                    <div class="col-md-4 center-content">
+                        <div class="fb-like" data-href="https://www.facebook.com/GitHub" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="Github" data-show-count="false">Tweet</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="col-md-4 center-content">
+                        <a href="/" target="_blank">Company Link</a>
+                    </div>
                 </div>
             </div>
 		</footer>

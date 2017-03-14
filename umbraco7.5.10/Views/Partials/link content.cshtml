@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Archetype.Models;
+@{ 
+    var audioWidget = Model.Content.GetPropertyValue<ArchetypeModel>("links");
+}
+<div class="row">
+	@foreach (var fieldset in audioWidget)
+    {
+        if (fieldset.Properties.Count() != 0)
+        {
+			<div class="col-sm-6 col-md-4 center-content">
+				@{var media = Umbraco.TypedMedia(@fieldset.GetValue("image"));
+				  <img class="img-responsive" src="@media.Url" alt="media.Name">
+				}
+                @{ 
+                    var pagelink = @fieldset.GetValue("link");
+				    <a href="pageLink.Url">@fieldset.GetValue("title")</a>
+
+                    foreach (var prop in fieldset.Properties)
+                    {
+                        
+                    }
+
+
+                }
+			</div>
+		}
+	}
+</div>

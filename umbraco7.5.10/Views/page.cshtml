@@ -1,47 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@using Archetype.Models;
 @{
     Layout = "master.cshtml";
 }
 @Umbraco.Field("heading")
 @Umbraco.Field("mainRTE")
-@{ 
-    var tabs = Model.Content.GetPropertyValue<ArchetypeModel>("lists");
-}
-<ul class="nav nav-tabs">
-    @foreach (var fieldset in tabs)
-    {
-        int index = tabs.IndexOf(fieldset);
-        if (index == 0)
-        {
-            <li class="active">
-                <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")</a>
-            </li>
-        }
-        else
-        {
-            <li>
-                <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")</a>
-            </li>
-        }
-    }
-</ul>
-<div class="tab-content">
-    @foreach (var fieldset in tabs)
-    {
-        HtmlString details = new HtmlString(@fieldset.GetValue("details"));
-        int index = tabs.IndexOf(fieldset);
-        if (index == 0)
-        {
-            <div class="tab-pane active" id="tab@(index)">
-                @details
-            </div>
-        }
-        else
-        {
-            <div class="tab-pane" id="tab@(index)">
-                @details
-            </div>
-        }
-    }
-</div>
+@{Html.RenderPartial("page tabbed content");}
+@{Html.RenderPartial("audio content");}
+@{Html.RenderPartial("toolkit content");}
+@{Html.RenderPartial("link content");}

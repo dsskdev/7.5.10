@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "cc1dda6ddd917ad3")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.10")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9c5ca0f03df0df79")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.19")]
 
 
 // FILE: models.generated.cs
@@ -324,6 +324,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Home Feature
+		///</summary>
+		[ImplementPropertyType("homeFeature")]
+		public Archetype.Models.ArchetypeModel HomeFeature
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("homeFeature"); }
+		}
+
+		///<summary>
 		/// Site Name
 		///</summary>
 		[ImplementPropertyType("siteName")]
@@ -458,12 +467,39 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Audio
+		///</summary>
+		[ImplementPropertyType("audio")]
+		public Archetype.Models.ArchetypeModel Audio
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("audio"); }
+		}
+
+		///<summary>
+		/// Links
+		///</summary>
+		[ImplementPropertyType("links")]
+		public Archetype.Models.ArchetypeModel Links
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("links"); }
+		}
+
+		///<summary>
 		/// Lists
 		///</summary>
 		[ImplementPropertyType("lists")]
 		public Archetype.Models.ArchetypeModel Lists
 		{
 			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("lists"); }
+		}
+
+		///<summary>
+		/// Toolkit
+		///</summary>
+		[ImplementPropertyType("toolkit")]
+		public Archetype.Models.ArchetypeModel Toolkit
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("toolkit"); }
 		}
 
 		///<summary>

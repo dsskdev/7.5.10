@@ -1,0 +1,430 @@
+﻿ 2017-03-09 12:08:05,824 [P12568/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.10 application starting on ST075893
+ 2017-03-09 12:08:05,937 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-03-09 12:08:05,945 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-03-09 12:08:06,010 [P12568/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-03-09 12:08:06,015 [P12568/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-03-09 12:08:06,019 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-03-09 12:08:06,702 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 683ms)
+ 2017-03-09 12:08:06,720 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-03-09 12:08:06,724 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 3ms)
+ 2017-03-09 12:08:06,725 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-03-09 12:08:06,729 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 4ms)
+ 2017-03-09 12:08:06,743 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-03-09 12:08:06,747 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 3ms)
+ 2017-03-09 12:08:06,748 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-03-09 12:08:06,753 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 5ms)
+ 2017-03-09 12:08:06,787 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-03-09 12:08:06,790 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 3ms)
+ 2017-03-09 12:08:06,791 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-03-09 12:08:06,794 [P12568/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 3ms)
+ 2017-03-09 12:08:08,509 [P12568/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-03-09 12:08:09,105 [P12568/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-03-09 12:08:09,260 [P12568/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-03-09 12:08:09,442 [P12568/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-03-09 12:08:09,492 [P12568/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3740ms)
+ 2017-03-09 12:08:10,007 [P12568/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:60059/umbraco (UmbracoModule request)
+ 2017-03-09 12:08:10,239 [P12568/D2/T7] INFO  umbraco.content - Load Xml from file...
+ 2017-03-09 12:08:10,278 [P12568/D2/T7] INFO  umbraco.content - Loaded Xml from file.
+ 2017-03-09 12:08:11,455 [P12568/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-03-09 12:08:11,468 [P12568/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 12ms)
+ 2017-03-09 12:08:11,956 [P12568/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-03-09 12:08:11,967 [P12568/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 11ms)
+ 2017-03-09 12:08:15,028 [P12568/D2/T7] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 12:08:15,195 [P12568/D2/T7] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 12:09:10,502 [P12568/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-08 12:09:10
+ 2017-03-09 12:19:13,364 [P12568/D2/T18] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username 5040647 from IP address ::1
+ 2017-03-09 12:19:13,366 [P12568/D2/T18] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: 5040647 logged in from IP address ::1
+ 2017-03-09 12:19:13,628 [P12568/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-09 12:19:13,635 [P12568/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 7ms)
+ 2017-03-09 12:19:13,688 [P12568/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2017-03-09 12:19:13,697 [P12568/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 8ms)
+ 2017-03-09 12:19:13,734 [P12568/D2/T8] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-09 12:19:13,734 [P12568/D2/T8] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-09 12:19:13,736 [P12568/D2/T8] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-09 12:19:13,747 [P12568/D2/T8] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 10ms)
+ 2017-03-09 12:19:13,751 [P12568/D2/T50] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2017-03-09 12:19:13,757 [P12568/D2/T50] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 5ms)
+ 2017-03-09 12:22:32,727 [P12568/D2/T38] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2017-03-09 12:22:32,739 [P12568/D2/T38] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 12ms)
+ 2017-03-09 12:38:49,417 [P12568/D2/T46] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: 5040647, IP Address: ::1
+ 2017-03-09 12:58:50,502 [P12568/D2/T35] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username 5040647 from IP address ::1
+ 2017-03-09 12:58:50,502 [P12568/D2/T35] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: 5040647 logged in from IP address ::1
+ 2017-03-09 13:18:20,887 [P12568/D2/T42] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: 5040647, IP Address: ::1
+ 2017-03-09 13:29:04,403 [P12568/D2/T35] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username 5040647 from IP address ::1
+ 2017-03-09 13:29:04,403 [P12568/D2/T35] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: 5040647 logged in from IP address ::1
+ 2017-03-09 13:37:55,441 [P12568/D2/T45] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Umbraco.Core.IO.FileSecurityException: File '\site.cshtml' is outside this filesystem's root.
+   at Umbraco.Core.IO.PhysicalFileSystem.GetFullPath(String path)
+   at Umbraco.Core.IO.PhysicalFileSystem.FileExists(String path)
+   at Umbraco.Core.Persistence.Repositories.FileRepository`2.AddOrUpdate(TEntity entity)
+   at Umbraco.Core.Persistence.Repositories.PartialViewRepository.AddOrUpdate(IPartialView entity)
+   at Umbraco.Core.Services.FileService.CreatePartialViewMacro(IPartialView partialView, PartialViewType partialViewType, String snippetName, Int32 userId)
+   at umbraco.PartialViewTasksBase.PerformSave()
+   at Umbraco.Web.UI.LegacyDialogTask.Save()
+   at Umbraco.Web.UI.LegacyDialogHandler.Create(HttpContextBase httpContext, User umbracoUser, String nodeType, Int32 nodeId, String text, Int32 typeId)
+   at umbraco.presentation.create.dialogHandler_temp.Create(String NodeType, Int32 TypeId, Int32 NodeId, String Text)
+   at Umbraco.Web.UI.Umbraco.Create.PartialView.SubmitButton_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.umbraco_create_aspx.ProcessRequest(HttpContext context) in c:\Users\5040647\AppData\Local\Temp\Temporary ASP.NET Files\vs\56db77db\70fe7859\App_Web_create.aspx.5f2dec3.xaq1ql0_.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2017-03-09 13:40:33,715 [P12568/D2/T43] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.InvalidOperationException: The partial view 'backgroundImage' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/RenderMvc/backgroundImage.aspx
+~/Views/RenderMvc/backgroundImage.ascx
+~/Views/Shared/backgroundImage.aspx
+~/Views/Shared/backgroundImage.ascx
+~/Views/RenderMvc/backgroundImage.cshtml
+~/Views/RenderMvc/backgroundImage.vbhtml
+~/Views/Shared/backgroundImage.cshtml
+~/Views/Shared/backgroundImage.vbhtml
+~/Views/Partials/backgroundImage.cshtml
+~/Views/MacroPartials/backgroundImage.cshtml
+~/Views/backgroundImage.cshtml
+   at System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName)
+   at ASP._Page_Views_master_cshtml.Execute() in c:\Dibs\umbraco7.5.10\umbraco7.5.10\Views\master.cshtml:line 21
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   at System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   at System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   at System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   at System.Web.WebPages.WebPageBase.PopContext()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2017-03-09 13:58:41,389 [P12568/D2/T38] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: 5040647, IP Address: ::1
+ 2017-03-09 14:05:03,964 [P12568/D2/T35] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username 5040647 from IP address ::1
+ 2017-03-09 14:05:03,964 [P12568/D2/T35] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: 5040647 logged in from IP address ::1
+ 2017-03-09 14:12:23,723 [P12568/D2/T45] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page One' with Id '1095' has been published.
+ 2017-03-09 14:12:27,960 [P12568/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:12:27,973 [P12568/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:12:30,442 [P12568/D2/T29] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Three' with Id '1096' has been published.
+ 2017-03-09 14:12:34,465 [P12568/D2/T43] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:12:34,478 [P12568/D2/T43] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:22:18,302 [P12568/D2/T47] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1071' has been published.
+ 2017-03-09 14:22:22,352 [P12568/D2/T46] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:22:22,371 [P12568/D2/T46] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:24:45,240 [P12568/D2/T49] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.HealthCheck.HealthCheck
+ 2017-03-09 14:24:45,252 [P12568/D2/T49] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.HealthCheck.HealthCheck, found 0 (took 11ms)
+ 2017-03-09 14:24:46,173 [P12568/D2/T107] ERROR dashboardUtilities.FeedProxy - Exception occurred
+System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
+ 2017-03-09 14:30:47,631 [P12568/D2/T105] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-09 14:30:47,632 [P12568/D2/T105] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-09 14:31:03,614 [P12568/D2/T51] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Four' with Id '0' has been published.
+ 2017-03-09 14:31:07,659 [P12568/D2/T80] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:31:07,677 [P12568/D2/T80] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:31:29,400 [P12568/D2/T51] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Two' with Id '1075' has been published.
+ 2017-03-09 14:31:33,505 [P12568/D2/T46] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:31:33,516 [P12568/D2/T46] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:31:43,598 [P12568/D2/T85] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page One' with Id '1095' has been published.
+ 2017-03-09 14:31:43,599 [P12568/D2/T85] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Two' with Id '1075' has been published.
+ 2017-03-09 14:31:47,649 [P12568/D2/T45] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:31:47,668 [P12568/D2/T45] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:32:16,442 [P12568/D2/T82] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Five' with Id '0' has been published.
+ 2017-03-09 14:32:20,474 [P12568/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:32:20,479 [P12568/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:32:32,071 [P12568/D2/T78] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Six' with Id '0' has been published.
+ 2017-03-09 14:32:36,101 [P12568/D2/T87] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:32:36,104 [P12568/D2/T87] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:34:42,255 [P12568/D2/T94] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Six' with Id '1103' has been published.
+ 2017-03-09 14:34:46,287 [P12568/D2/T87] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:34:46,298 [P12568/D2/T87] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:34:49,129 [P12568/D2/T46] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Five' with Id '1102' has been published.
+ 2017-03-09 14:34:53,158 [P12568/D2/T94] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:34:53,172 [P12568/D2/T94] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:34:55,665 [P12568/D2/T80] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Four' with Id '1101' has been published.
+ 2017-03-09 14:34:59,700 [P12568/D2/T87] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:34:59,710 [P12568/D2/T87] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:39:31,292 [P12568/D2/T94] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Three' with Id '1096' has been published.
+ 2017-03-09 14:39:34,919 [P12568/D2/T46] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Four' with Id '1101' has been published.
+ 2017-03-09 14:39:38,955 [P12568/D2/T86] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:39:38,974 [P12568/D2/T86] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:39:40,307 [P12568/D2/T85] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Five' with Id '1102' has been published.
+ 2017-03-09 14:39:44,329 [P12568/D2/T87] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:39:44,341 [P12568/D2/T87] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:39:44,831 [P12568/D2/T85] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Page Six' with Id '1103' has been published.
+ 2017-03-09 14:39:48,867 [P12568/D2/T78] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:39:48,880 [P12568/D2/T78] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 14:45:12,897 [P12568/D2/T86] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Home' with Id '1071' has been published.
+ 2017-03-09 14:45:16,920 [P12568/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2017-03-09 14:45:16,925 [P12568/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2017-03-09 15:01:22,770 [P12568/D2/T45] ERROR dashboardUtilities.FeedProxy - Exception occurred
+System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
+ 2017-03-09 16:08:44,152 [P12568/D2/T8] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username 5040647 from IP address ::1
+ 2017-03-09 16:08:44,152 [P12568/D2/T8] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: 5040647 logged in from IP address ::1
+ 2017-03-09 16:08:44,172 [P12568/D2/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2017-03-09 16:08:44,172 [P12568/D2/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2017-03-09 16:08:46,986 [P12568/D2/T85] ERROR dashboardUtilities.FeedProxy - Exception occurred
+System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at dashboardUtilities.FeedProxy.Page_Load(Object sender, EventArgs e)
+ 2017-03-09 16:09:10,427 [P12568/D2/T46] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-08 16:09:10
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-03-09 16:12:31,033 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-03-09 16:12:31,034 [P12568/D2/T82] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-03-09 16:12:31,034 [P12568/D2/T86] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-03-09 16:12:31,034 [P12568/D2/T79] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-03-09 16:12:31,034 [P12568/D2/T46] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-03-09 16:12:31,071 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-03-09 16:12:31,071 [P12568/D2/T94] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-03-09 16:12:31,072 [P12568/D2/T15] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-03-09 16:12:31,073 [P12568/D2/T94] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-03-09 16:12:31,102 [P12568/D2/T94] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-03-09 16:13:01,191 [P12568/D2/T94] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2017-03-09 16:13:05,460 [P12568/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.10 application starting on ST075893
+ 2017-03-09 16:13:05,522 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-03-09 16:13:05,530 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-03-09 16:13:05,569 [P12568/D3/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-03-09 16:13:05,570 [P12568/D3/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-03-09 16:13:05,574 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-03-09 16:13:05,782 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 208ms)
+ 2017-03-09 16:13:05,793 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-03-09 16:13:05,798 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 5ms)
+ 2017-03-09 16:13:05,798 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-03-09 16:13:05,803 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 5ms)
+ 2017-03-09 16:13:05,812 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-03-09 16:13:05,816 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+ 2017-03-09 16:13:05,817 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-03-09 16:13:05,823 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 6ms)
+ 2017-03-09 16:13:05,844 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-03-09 16:13:05,848 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 4ms)
+ 2017-03-09 16:13:05,848 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-03-09 16:13:05,852 [P12568/D3/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 3ms)
+ 2017-03-09 16:13:06,541 [P12568/D3/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-03-09 16:13:06,757 [P12568/D3/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-03-09 16:13:06,770 [P12568/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-03-09 16:13:06,858 [P12568/D3/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-03-09 16:13:06,959 [P12568/D3/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1594ms)
+ 2017-03-09 16:13:07,068 [P12568/D3/T105] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:60059/umbraco (UmbracoModule request)
+ 2017-03-09 16:13:11,683 [P12568/D3/T8] INFO  umbraco.content - Load Xml from file...
+ 2017-03-09 16:13:11,686 [P12568/D3/T8] INFO  umbraco.content - Loaded Xml from file.
+ 2017-03-09 16:13:12,196 [P12568/D3/T8] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-03-09 16:13:12,205 [P12568/D3/T8] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 9ms)
+ 2017-03-09 16:13:12,343 [P12568/D3/T8] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-03-09 16:13:12,349 [P12568/D3/T8] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 5ms)
+ 2017-03-09 16:13:16,116 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:16,118 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:21,011 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:21,011 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:23,018 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:23,018 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:23,932 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:23,932 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:24,821 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:24,821 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:25,704 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:25,705 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:26,578 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:26,578 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:13:27,507 [P12568/D3/T8] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:13:27,508 [P12568/D3/T8] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:14:11,784 [P12568/D3/T45] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-08 16:14:11
+ 2017-03-09 16:16:45,591 [P12568/D3/T105] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:16:45,591 [P12568/D3/T105] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:16:46,474 [P12568/D3/T105] ERROR Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Failed to build models.
+System.Web.HttpCompileException (0x80004005): c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.GetModelsAssembly(Boolean forceRebuild) in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 300
+   at Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory.EnsureModels() in C:\Users\Stéphane\Documents\Development\Umbraco\Zbu\Zbu.ModelsBuilder\Umbraco.ModelsBuilder\Umbraco\PureLiveModelFactory.cs:line 152
+ 2017-03-09 16:16:46,474 [P12568/D3/T105] WARN  Umbraco.ModelsBuilder.Umbraco.PureLiveModelFactory - Running without models.
+ 2017-03-09 16:16:46,675 [P12568/D3/T79] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-03-09 16:16:55,489 [P12568/D3/T94] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-03-09 16:17:46,070 [P12568/D3/T46] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-03-09 16:17:49,100 [P12568/D3/T39] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-03-09 16:17:58,078 [P12568/D3/T41] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.

@@ -1,5 +1,5 @@
 Failed to build PureLive models.
-c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(341): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
+c:\Dibs\umbraco7.5.10\umbraco7.5.10\App_Data\Models\all.generated.cs(350): error CS1061: 'Umbraco.Core.Models.IPublishedContent' does not contain a definition for 'GetHeading' and no extension method 'GetHeading' accepting a first argument of type 'Umbraco.Core.Models.IPublishedContent' could be found (are you missing a using directive or an assembly reference?)
 
    at System.Web.Compilation.AssemblyBuilder.Compile()
    at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()

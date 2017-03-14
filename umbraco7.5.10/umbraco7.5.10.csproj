@@ -401,6 +401,10 @@
     <Content Include="config\404handlers.config" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\page.cshtml" />
+    <Content Include="Views\Partials\page tabbed content.cshtml" />
+    <Content Include="Views\Partials\audio content.cshtml" />
+    <Content Include="Views\Partials\toolkit content.cshtml" />
+    <Content Include="Views\Partials\link content.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

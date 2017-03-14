@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Archetype.Models;
+@{ 
+    var banner = Model.Content.GetPropertyValue<ArchetypeModel>("homeFeature");
+}
+@foreach (var fieldset in banner)
+{ 
+	<div class="col-xs-12 center-content">
+		@fieldset.GetValue("bannerlineone")
+	</div>
+	<div class="col-xs-12 center-content">
+		@fieldset.GetValue("bannerlinetwo")
+	</div>
+	<div class="col-xs-12 center-content">
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe Title="embed-responsive-item" src="https://www.youtube.com/embed/@fieldset.GetValue("video")?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+}
