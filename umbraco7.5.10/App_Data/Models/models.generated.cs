@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9c5ca0f03df0df79")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.19")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "2ea9a57d7345de8")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.32")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -475,6 +475,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public Archetype.Models.ArchetypeModel Lists
 		{
 			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("lists"); }
+		}
+
+		///<summary>
+		/// Myth
+		///</summary>
+		[ImplementPropertyType("myth")]
+		public Archetype.Models.ArchetypeModel Myth
+		{
+			get { return this.GetPropertyValue<Archetype.Models.ArchetypeModel>("myth"); }
 		}
 
 		///<summary>

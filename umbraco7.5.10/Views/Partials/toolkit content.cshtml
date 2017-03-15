@@ -1,21 +1,24 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @using Archetype.Models;
 @{ 
-    var audioWidget = Model.Content.GetPropertyValue<ArchetypeModel>("toolkit");
+    var toolkitWidget = Model.Content.GetPropertyValue<ArchetypeModel>("toolkit");
 }
-<div class="row">
-	@foreach (var fieldset in audioWidget)
-    {
-        if (fieldset.Properties.Count() != 0)
+@if (toolkitWidget.Fieldsets.Count() > 1)
+{
+    <div class="row toolkit">
+	    @foreach (var fieldset in toolkitWidget)
         {
-			<div class="col-sm-6 col-md-4 center-content">
-				@{var media = Umbraco.TypedMedia(@fieldset.GetValue("toolkitImage"));
-				  <img class="img-responsive" src="@media.Url" alt="media.Name">
-				}
-                @{var mediaLink = Umbraco.TypedMedia(@fieldset.GetValue("toolkitLink"));
-				<a href="@mediaLink.Url" target="_blank">@fieldset.GetValue("title")</a>
+            if (fieldset.Properties.Count() != 0)
+            {
+			    <div class="col-sm-6 col-md-4 center-content">
+				    @{var media = Umbraco.TypedMedia(@fieldset.GetValue("toolkitImage"));
+				        <img class="img-responsive" src="@media.Url" alt="media.Name">
+				    }
+                    @{var mediaLink = Umbraco.TypedMedia(@fieldset.GetValue("toolkitLink"));
+				        <a href="@mediaLink.Url" target="_blank">@fieldset.GetValue("title")</a>
                     }
-			</div>
-		}
-	}
-</div>
+			    </div>
+            }
+        }
+    </div>
+}

@@ -3,45 +3,51 @@
 @{ 
     var tabs = Model.Content.GetPropertyValue<ArchetypeModel>("lists");
 }
-<ul class="nav nav-tabs">
-    @foreach (var fieldset in tabs)
-    {
-       if(fieldset.Properties.Count() != 0){ 
-        int index = tabs.IndexOf(fieldset);
-        if (index == 0)
+@if (tabs.Fieldsets.Count() > 1)
+{
+<div class="row tabbed">
+    <ul class="nav nav-tabs">
+        @foreach (var fieldset in tabs)
         {
-            <li class="active">
-                <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")</a>
-            </li>
-        }
-        else
-        {
-            <li>
-                <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")</a>
-            </li>
-            }
-        }
-    }
-</ul>
-<div class="tab-content">
-    @foreach (var fieldset in tabs)
-    {
-        if (fieldset.Properties.Count() != 0)
-        {
-            HtmlString details = new HtmlString(@fieldset.GetValue("details"));
-            int index = tabs.IndexOf(fieldset);
-            if (index == 0)
+            if (fieldset.Properties.Count() != 0)
             {
-            <div class="tab-pane active" id="tab@(index)">
-                @details
-            </div>
-            }
-            else
-            {
-            <div class="tab-pane" id="tab@(index)">
-                @details
-            </div>
+                int index = tabs.IndexOf(fieldset);
+                if (index == 0)
+                {
+                <li class="active">
+                    <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")</a>
+                </li>
+                }
+                else
+                {
+                <li>
+                    <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")</a>
+                </li>
                 }
             }
         }
+    </ul>
+    <div class="tab-content">
+        @foreach (var fieldset in tabs)
+        {
+            if (fieldset.Properties.Count() != 0)
+            {
+                HtmlString details = new HtmlString(@fieldset.GetValue("details"));
+                int index = tabs.IndexOf(fieldset);
+                if (index == 0)
+                {
+                <div class="tab-pane active" id="tab@(index)">
+                    @details
+                </div>
+                }
+                else
+                {
+                <div class="tab-pane" id="tab@(index)">
+                    @details
+                </div>
+                }
+            }
+        }
+    </div>
 </div>
+}

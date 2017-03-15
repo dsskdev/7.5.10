@@ -1,29 +1,30 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @using Archetype.Models;
+@using Newtonsoft.Json.Linq
 @{ 
-    var audioWidget = Model.Content.GetPropertyValue<ArchetypeModel>("links");
+    var linkWidget = Model.Content.GetPropertyValue<ArchetypeModel>("links");
 }
-<div class="row">
-	@foreach (var fieldset in audioWidget)
-    {
-        if (fieldset.Properties.Count() != 0)
+@if (linkWidget.Fieldsets.Count() > 1)
+{
+    <div class="row">
+	    @foreach (var fieldset in linkWidget)
         {
-			<div class="col-sm-6 col-md-4 center-content">
-				@{var media = Umbraco.TypedMedia(@fieldset.GetValue("image"));
-				  <img class="img-responsive" src="@media.Url" alt="media.Name">
-				}
-                @{ 
-                    var pagelink = @fieldset.GetValue("link");
-				    <a href="pageLink.Url">@fieldset.GetValue("title")</a>
-
-                    foreach (var prop in fieldset.Properties)
-                    {
-                        
+            if (fieldset.Properties.Count() != 0)
+            {
+	            <div class="col-sm-6 col-md-3 center-content">
+		            @{var media = Umbraco.TypedMedia(@fieldset.GetValue("image"));
+			            <img class="img-responsive" src="@media.Url" alt="media.Name">
+		            }
+                    @{
+                        foreach (var prop in fieldset.GetValue<JArray>("Link"))
+                        {
+                            var linkUrl = (prop.Value<bool>("isInternal")) ? Umbraco.NiceUrl(prop.Value<int>("internal")) : prop.Value<string>("link");
+                            var linkTarget = prop.Value<bool>("newWindow") ? "_blank" : null;
+                            <a href="@linkUrl" target="@linkTarget">@(prop.Value<string>("caption"))</a>
+                        }
                     }
-
-
-                }
-			</div>
-		}
-	}
-</div>
+	            </div>
+            }
+        }
+    </div>
+}

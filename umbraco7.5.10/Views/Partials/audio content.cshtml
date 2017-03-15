@@ -3,18 +3,23 @@
 @{ 
     var audioWidget = Model.Content.GetPropertyValue<ArchetypeModel>("audio");
 }
-@foreach (var fieldset in audioWidget)
+@if (audioWidget.Fieldsets.Count() > 1)
 {
-	if(fieldset.Properties.Count() != 0){ 
-		<div class="col-sm-6 col-md-6 center-content">
-			@fieldset.GetValue("audioBlurb")
-		</div>
-		<div class="col-sm-6 col-md-6 center-content">
-			<audio controls class="col-xs-12">
-				@{var media = Umbraco.TypedMedia(@fieldset.GetValue("audiofile"));
-					<source src="@media.GetPropertyValue("umbracofile")" type="audio/mp4" />
-				}
-			</audio>
-		</div>
-	}
+    <div class="row audio">
+        @foreach (var fieldset in audioWidget)
+        {
+            if (fieldset.Properties.Count() != 0) {
+                <div class="col-sm-6 col-md-6 center-content">
+                    @fieldset.GetValue("audioBlurb")
+                </div>
+                <div class="col-sm-6 col-md-6 center-content">
+                    <audio controls class="col-xs-12">
+                        @{var media = Umbraco.TypedMedia(@fieldset.GetValue("audiofile"));
+                            <source src="@media.GetPropertyValue("umbracofile")" type="audio/mp4" />
+                        }
+                    </audio>
+                </div>   
+            }
+        }
+    </div>
 }
