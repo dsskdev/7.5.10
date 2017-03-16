@@ -406,6 +406,7 @@
     <Content Include="Views\Partials\toolkit content.cshtml" />
     <Content Include="Views\Partials\link content.cshtml" />
     <Content Include="Views\Partials\myth content.cshtml" />
+    <Content Include="Views\Partials\myth.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

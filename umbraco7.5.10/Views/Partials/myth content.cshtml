@@ -3,68 +3,103 @@
 @{ 
     var mythWidget = Model.Content.GetPropertyValue<ArchetypeModel>("myth");
 }
-@if(mythWidget.Fieldsets.Count() > 1){
+@if (mythWidget.Fieldsets.Count() > 1)
+{
     <div class="row myth">
         <ul class="nav nav-tabs">
-            @foreach (var fieldset in mythWidget){
-                if (fieldset.Properties.Count() != 0){
-                    <li class="active">
-		                <div class="col-sm-6 col-md-2 center-content">
-			               <a  data-toggle="tab">
-                                @{var media = Umbraco.TypedMedia(@fieldset.GetValue("image"));
-				                    <img class="img-responsive" src="@media.Url" alt="media.Name">
-			                    }
-                                @fieldset.GetValue("title")
-                           </a>
-		                </div>
-                    </li>
-	            }
+            @foreach (var fieldset in mythWidget)
+            {
+                if (fieldset.Properties.Count() != 0)
+                {
+                    int index = mythWidget.IndexOf(fieldset);
+                    if (index == 0)
+                    {
+                                <li class="active">
+		                            <div class="col-sm-6 col-md-2 center-content">
+			                           <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")
+                                          @*  @{var media = Umbraco.TypedMedia(@fieldset.GetValue("image"));
+				                                <img class="img-responsive" src="@media.Url" alt="media.Name">
+			                                }*@
+                                       </a>
+		                            </div>
+                                </li>
+                    }
+                    else
+                    {
+                                <li>
+                                    <div class="col-sm-6 col-md-2 center-content">
+                                        <a href="#tab@(index)" data-toggle="tab">@fieldset.GetValue("title")
+                                            @*@{var media = Umbraco.TypedMedia(@fieldset.GetValue("image"));
+                                                <img class="img-responsive" src="@media.Url" alt="media.Name">
+                                            }*@
+                                        </a>
+                                    </div>
+                                </li>
+                    }
+
+                }
             }
         </ul>
     </div>
-    <div class="tab-content">
-    @foreach (var fieldset in mythWidget){
-        <div class="tab-pane active">
-            <ul class="nav nav-tabs">                   
-                @foreach (var prop in fieldset.Properties){
-                    if (prop.Alias != "title" && prop.Alias != "image"){
-                        int index = fieldset.Properties.IndexOf(prop);
-                        if (index == 2){
-                            <li class="active">
-                                <a href="#tab@(index)" data-toggle="tab">@prop.Alias</a>
-                            </li>
-                        }
-                        else{
-                            <li>
-                                <a href="#tab@(index)" data-toggle="tab">@prop.Alias</a>
-                            </li>
-                        }
-                    }
-                }           
-            </ul>
-        </div>
-    }
-    <div class="tab-content">
-        @foreach (var fieldset in mythWidget){
-            if (fieldset.Properties.Count() != 0){
-                foreach (var prop in fieldset.Properties){
-                    if (prop.Alias != "title" && prop.Alias != "image"){
-                        var details = prop.Value;
-                        int index = fieldset.Properties.IndexOf(prop);
-                        if (index == 2){
-                            <div class="tab-pane active" id="tab@(index)">
-                                @details
-                            </div>
-                        }
-                        else{
-                            <div class="tab-pane" id="tab@(index)">
-                                @details
-                            </div>
+       <div class="tab-content">
+       
+            
+            @foreach (var fieldset in mythWidget)
+            {
+                <div class="tab-pane active ">
+                    <ul class="nav nav-tabs">                   
+                        @foreach (var prop in fieldset.Properties)
+                        {
+                            if (prop.Alias != "title" && prop.Alias != "image")
+                            {
+                                int index = fieldset.Properties.IndexOf(prop);
+                                if (index == 2)
+                                {
+                                    <li class="active">
+                                        <a href="#tab@(index)" data-toggle="tab">@prop.Alias</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a href="#tab@(index)" data-toggle="tab">@prop.Alias</a>
+                                    </li>
+                                }
+                            }
+                        }           
+                    </ul>
+                </div>
+            }
+            <div class="tab-content">
+                @foreach (var fieldset in mythWidget)
+                {
+                    if (fieldset.Properties.Count() != 0)
+                    {
+                        foreach (var prop in fieldset.Properties)
+                        {
+                            if (prop.Alias != "title" && prop.Alias != "image")
+                            {
+                                var details = prop.Value;
+                                int index = fieldset.Properties.IndexOf(prop);
+                                if (index == 2)
+                                {
+                                    <div class="tab-pane active" id="tab@(index)">
+                                        @details
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="tab-pane" id="tab@(index)">
+                                        @details
+                                    </div>
+                                }
+                            }
                         }
                     }
                 }
-            }
-        }
-    </div>
+            </div>
+
+ 
+
     </div>
 }

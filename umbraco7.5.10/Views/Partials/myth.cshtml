@@ -1,0 +1,156 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Archetype.Models;
+@{ 
+    var mythWidget = Model.Content.GetPropertyValue<ArchetypeModel>("myth");
+}
+@if (mythWidget.Fieldsets.Count() > 1)
+{
+    <div class="row myth">
+        <ul class="nav nav-tabs">
+            @foreach (var fieldset in mythWidget)
+            {
+                if (fieldset.Properties.Count() != 0)
+                {
+                    int fieldsetCount = mythWidget.IndexOf(fieldset);
+                    if (fieldsetCount == 0)
+                    {
+                        <li class="active">		                            
+			                <a href="#firstTab@(fieldsetCount)" data-toggle="tab">@fieldset.GetValue("title")</a>		                            
+                        </li>
+                    }
+                    else
+                    {
+                        <li>                                   
+                            <a href="#firstTab@(fieldsetCount)" data-toggle="tab">@fieldset.GetValue("title")</a>                                  
+                        </li>
+                    }
+
+                }
+            }
+        </ul>
+    </div>
+    <div class="tab-content">
+    @foreach (var fieldset in mythWidget)
+    {
+        int fieldsetCount = mythWidget.IndexOf(fieldset);
+        if (fieldsetCount == 0)
+        {
+            <div role="tabpanel" class="tab-pane active" id="firstTab@(fieldsetCount)">
+                @* workin above*@
+                <ul class="nav nav-tabs">
+                    @foreach (var property in fieldset.Properties)
+                    {
+                        if (property.Alias != "title" && property.Alias != "image")
+                        {
+                            int propertyIndex = fieldset.Properties.IndexOf(property);
+
+                            if (propertyIndex == 2)
+                            {
+                                <li class="active">
+                                    <a href="#property@(propertyIndex)" data-toggle="tab">@property.Alias</a>
+                                </li>
+                            }
+                            else
+                            {
+                            <li data-toggle="tab">
+                                <a href="#property@(propertyIndex)" data-toggle="tab">@property.Alias</a>
+                            </li>
+                            }
+                        }
+                    }
+                </ul>
+                @* workin below*@
+            </div>
+        }
+        else
+        {
+            <div role="tabpanel" class="tab-pane" id="firstTab@(fieldsetCount)">
+                @* workin above*@
+                <ul class="nav nav-tabs">
+                    @foreach (var property in fieldset.Properties)
+                    {
+                        if (property.Alias != "title" && property.Alias != "image")
+                        {
+                            int propertyIndex = fieldset.Properties.IndexOf(property);
+
+                            if (propertyIndex == 2)
+                            {
+                                <li class="active" data-toggle="tab">
+                                    <a href="#property@(propertyIndex)" data-toggle="tab">@property.Alias</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li data-toggle="tab">
+                                    <a href="#property@(propertyIndex)" data-toggle="tab">@property.Alias</a>
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
+                @* workin below*@
+            </div>
+        }
+    }
+</div>
+}
+
+
+@*
+    @foreach (var fieldset in mythWidget)
+    {
+        <div class="tab-pane active ">
+            <ul class="nav nav-tabs">
+                @foreach (var prop in fieldset.Properties)
+                {
+                    if (prop.Alias != "title" && prop.Alias != "image")
+                    {
+                        int index = fieldset.Properties.IndexOf(prop);
+                        if (index == 2)
+                        {
+                            <li class="active">
+                                <a href="#tab@(index)" data-toggle="tab">@prop.Alias</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="#tab@(index)" data-toggle="tab">@prop.Alias</a>
+                            </li>
+                        }
+                    }
+                }
+            </ul>
+        </div>
+    }
+
+    <div class="tab-content">
+        @foreach (var fieldset in mythWidget)
+        {
+            if (fieldset.Properties.Count() != 0)
+            {
+                foreach (var prop in fieldset.Properties)
+                {
+                    if (prop.Alias != "title" && prop.Alias != "image")
+                    {
+                        var details = prop.Value;
+                        int index = fieldset.Properties.IndexOf(prop);
+                        if (index == 2)
+                        {
+                            <div class="tab-pane active" id="tab@(index)">
+                                @details
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="tab-pane" id="tab@(index)">
+                                @details
+                            </div>
+                        }
+                    }
+                }
+            }
+        }
+    </div>
+
+*@
